@@ -1,0 +1,92 @@
+body{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                         "sidebar main main"
+                         "footer footer footer";
+    grid-column-gap: 15px;
+}
+
+body > header {
+    grid-row: 1 ;
+    grid-column: 1/-1;    
+}
+
+.r3{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #AEB8C4;
+    text-align: center;}
+/*
+5 rows
+5 columns
+Aztec Egyptian Home Greek Norse (nav)
+*/ 
+nav{
+    background-color: #333;
+}
+nav ul {
+    width: 100%;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+}
+
+li a {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+header {
+    background-color: #214358;
+    text-align: center;
+    height: 40px;
+}
+
+body {
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: none;
+    min-width: none;
+    background-color: #151B25;
+    font-family: serif;
+}
+
+
+h1{color: black;}
+
+section {
+        width:75%;
+        font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    background-color: #214358;
+}
